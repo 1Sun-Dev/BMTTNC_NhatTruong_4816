@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công cụ Mã hóa - HUTECH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .logo-hutech {
+            max-width: 300px;
+            /* Điều chỉnh kích thước logo */
+            margin-bottom: 20px;
+        }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            /* Hiệu ứng nổi lên khi di chuột vào */
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container py-5 text-center">
+
+        <div class="text-center mb-4">
+            <img src="{{ url_for('static', filename='/logo-dai-hoc-hutech_012634748.png') }}" alt="Logo HUTECH"
+                class="img-fluid" style="max-width: 300px; height: auto;">
+            </div>
+
+                <h1 class="mb-4 fw-bold text-primary">Bảo mật thông tin nâng cao</h1>
+             
+
+                <div class="row justify-content-center g-4">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-body">
+                                <div class="display-6 mb-3">🔑</div>
+                                <h5 class="card-title fw-bold">Mã hóa Caesar</h5>  
+                                <a href="/caesar" class="btn btn-primary px-4">Truy cập</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                <footer class="mt-5 pt-5 text-muted border-top">
+                    <p>&copy; 2024 - Sinh viên HUTECH</p>
+                </footer>
+        </div>
+</body>
+
+</html>
