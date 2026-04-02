@@ -17,10 +17,8 @@ def decode_image(encoded_image_path):
 
     message = ""
     for i in range(0, len(binary_message), 8):
-        byte = binary_message[i:i+8]
-        char = chr(int(byte, 2))
-
-        if binary_message[i:i+16] == '1111111111111110':
+        char = chr(int(binary_message[i:i+8],2))
+        if char == '\0':
             break
             
         message += char
